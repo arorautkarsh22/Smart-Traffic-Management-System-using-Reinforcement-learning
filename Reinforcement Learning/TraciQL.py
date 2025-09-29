@@ -18,7 +18,7 @@ else:
 # Step 3: Define Sumo configuration
 Sumo_config = [
     'sumo-gui',
-    '-c', 'C:/Users/Utkarsh/Documents/RML/RL.sumocfg',
+    '-c', 'Reinforcement Learning/RML/RL.sumocfg',
     '--step-length', '0.10',
     '--delay', '0',
     '--lateral-resolution', '0'
