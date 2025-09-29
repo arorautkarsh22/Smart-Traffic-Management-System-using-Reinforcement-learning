@@ -24,7 +24,7 @@ def get_average_waiting_time(sumo_cfg_file, steps=50000):
     
     Sumo_config = [
         'sumo-gui',
-        '-c', 'C:/Users/Utkarsh/Documents/RML/RL.sumocfg',
+        '-c', 'Reinforcement Learning/RML/RL.sumocfg',
         '--step-length', '0.10',
         '--delay', '0',
         '--lateral-resolution', '0'
