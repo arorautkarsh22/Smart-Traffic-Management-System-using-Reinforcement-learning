@@ -1,0 +1,12 @@
+# === Core Scientific and Data Handling Libraries (from TraciQL.py) ===
+numpy>=1.20.0
+matplotlib>=3.3.0
+
+# === Communication and Serialization (from TraciQL.py, RaspberryPI.py) ===
+json
+ast 
+
+# === Hardware and Networking (from RaspberryPI.py) ===
+RPi.GPIO
+# socket (built-in library, no pip install needed)
+# threading (built-in library, no pip install needed)
