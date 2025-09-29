@@ -1,0 +1,184 @@
+{
+  "timestamp": "2025-09-08T08:30:00Z",
+  "location": {
+    "city": "New York",
+    "coordinates": {
+      "lat": 40.7128,
+      "lng": -74.0060
+    }
+  },
+  "roads": [
+    {
+      "road_id": "I-95",
+      "name": "Interstate 95",
+      "segment_id": "I-95-SEG-001",
+      "coordinates": [
+        {"lat": 40.712, "lng": -74.005},
+        {"lat": 40.713, "lng": -74.004}
+      ],
+      "status": "congested",  // or "clear", "accident", etc.
+      "speed": {
+        "avg_kph": 25,
+        "expected_kph": 60
+      },
+      "vehicle_count": 120,
+      "congestion_level": "high",
+      "incidents": [
+        {
+          "type": "accident",
+          "description": "Minor collision reported",
+          "severity": "moderate",
+          "timestamp": "2025-09-08T08:20:00Z"
+        }
+      ]
+    }
+  ],
+  "cameras": [
+    {
+      "camera_id": "CAM-101",
+      "location": {
+        "lat": 40.7129,
+        "lng": -74.0061
+      },
+      "stream_url": "https://trafficcams.city.gov/CAM-101/stream",
+      "status": "online"
+    }
+  ],
+  "alerts": [
+    {
+      "alert_id": "ALERT-001",
+      "type": "construction",
+      "message": "Roadwork on 5th Ave until 6 PM",
+      "severity": "low",
+      "valid_until": "2025-09-08T18:00:00Z"
+    }
+  ],
+  "weather": {
+    "temperature_celsius": 22,
+    "condition": "clear",
+    "visibility_km": 10,
+    "impact_on_traffic": "none"
+  }
+}
+
+{
+  "road_id": "A1",
+  "name": "Highway A1",
+  "congestion_level": "medium",
+  "avg_speed_kph": 45,
+  "vehicle_count": 300
+}
+{
+  "incident_id": "INC-004",
+  "type": "accident",
+  "severity": "high",
+  "location": {
+    "lat": 40.758,
+    "lng": -73.985
+  },
+  "reported_at": "2025-09-08T08:05:00Z",
+  "expected_clearance": "2025-09-08T09:00:00Z"
+}
+{
+  "camera_id": "CAM-007",
+  "status": "offline",
+  "last_seen": "2025-09-08T07:59:00Z",
+  "stream_url": "https://cams.city.gov/CAM-007",
+  "location": {
+    "lat": 40.7132,
+    "lng": -74.0039
+  }
+}
+
+{
+  "intersection_id": "INT-001",
+  "name": "5th Ave & Main St",
+  "location": {
+    "lat": 40.712776,
+    "lng": -74.005974
+  },
+  "connected_roads": ["5th Ave", "Main St"],
+  "signal_state": {
+    "timestamp": "2025-09-08T08:30:00Z",
+    "phases": [
+      {
+        "direction": "North-South",
+        "signal": "green",
+        "time_remaining_sec": 15
+      },
+      {
+        "direction": "East-West",
+        "signal": "red",
+        "time_remaining_sec": 45
+      },
+      {
+        "direction": "Northbound Left Turn",
+        "signal": "yellow",
+        "time_remaining_sec": 5
+      }
+    ]
+  },
+  "timing_plan": {
+    "cycle_length_sec": 120,
+    "phases": [
+      {
+        "phase_id": "P1",
+        "direction": "North-South",
+        "green_time_sec": 40,
+        "yellow_time_sec": 5,
+        "red_time_sec": 75
+      },
+      {
+        "phase_id": "P2",
+        "direction": "East-West",
+        "green_time_sec": 35,
+        "yellow_time_sec": 5,
+        "red_time_sec": 80
+      }
+    ]
+  },
+  "traffic_metrics": {
+    "avg_vehicle_delay_sec": 22,
+    "vehicle_count": {
+      "northbound": 34,
+      "southbound": 29,
+      "eastbound": 45,
+      "westbound": 41
+    },
+    "queue_length_m": {
+      "northbound": 120,
+      "eastbound": 80
+    }
+  },
+  "status": "active"  // or "offline", "fault", etc.
+}
+
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [-74.0060, 40.7128],
+      [-74.0050, 40.7138]
+    ]
+  },
+  "properties": {
+    "road_id": "I-95",
+    "congestion_level": "high",
+    "avg_speed_kph": 20,
+    "color": "#ff0000"  // Optional for custom styling
+  }
+}
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-74.0059, 40.7129]
+  },
+  "properties": {
+    "intersection_id": "INT-001",
+    "signal_state": "green",
+    "direction": "North-South",
+    "time_remaining": 14
+  }
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (4037325 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="40.9530260" minlon="-74.2986490" maxlat="40.9537680" maxlon="-74.2975280"/>
+ <node id="104627175" visible="true" version="2" changeset="2881430" timestamp="2009-10-18T11:13:00Z" user="woodpeck_fixbot" uid="147510" lat="40.9536100" lon="-74.2931010"/>
+ <node id="104660518" visible="true" version="2" changeset="3086013" timestamp="2009-11-10T22:19:34Z" user="woodpeck_fixbot" uid="147510" lat="40.9535530" lon="-74.2948080"/>
+ <node id="104725359" visible="true" version="2" changeset="2881430" timestamp="2009-10-18T11:23:17Z" user="woodpeck_fixbot" uid="147510" lat="40.9534180" lon="-74.2994080"/>
+ <node id="104746536" visible="true" version="2" changeset="3296253" timestamp="2009-12-05T16:29:41Z" user="woodpeck_fixbot" uid="147510" lat="40.9535090" lon="-74.2964260"/>
+ <node id="104765585" visible="true" version="2" changeset="2104780" timestamp="2009-08-11T07:12:56Z" user="woodpeck_fixbot" uid="147510" lat="40.9541300" lon="-74.2980210"/>
+ <node id="104787707" visible="true" version="2" changeset="2104780" timestamp="2009-08-11T07:14:50Z" user="woodpeck_fixbot" uid="147510" lat="40.9535970" lon="-74.2935670"/>
+ <node id="104787710" visible="true" version="2" changeset="2540872" timestamp="2009-09-20T05:56:42Z" user="woodpeck_fixbot" uid="147510" lat="40.9534560" lon="-74.2979860"/>
+ <node id="104787712" visible="true" version="2" changeset="2881430" timestamp="2009-10-18T11:29:13Z" user="woodpeck_fixbot" uid="147510" lat="40.9534290" lon="-74.2988790"/>
+ <node id="104834553" visible="true" version="2" changeset="2881430" timestamp="2009-10-18T11:33:25Z" user="woodpeck_fixbot" uid="147510" lat="40.9523180" lon="-74.2979430"/>
+ <node id="104834555" visible="true" version="2" changeset="3296253" timestamp="2009-12-05T16:37:35Z" user="woodpeck_fixbot" uid="147510" lat="40.9528010" lon="-74.2979680"/>
+ <node id="104834557" visible="true" version="2" changeset="2540872" timestamp="2009-09-20T06:00:33Z" user="woodpeck_fixbot" uid="147510" lat="40.9531030" lon="-74.2979850"/>
+ <node id="104834559" visible="true" version="2" changeset="2881430" timestamp="2009-10-18T11:33:25Z" user="woodpeck_fixbot" uid="147510" lat="40.9533540" lon="-74.2979920"/>
+ <node id="104834563" visible="true" version="2" changeset="3086013" timestamp="2009-11-10T22:28:36Z" user="woodpeck_fixbot" uid="147510" lat="40.9535340" lon="-74.2979810"/>
+ <way id="11707578" visible="true" version="2" changeset="14386863" timestamp="2012-12-24T07:36:44Z" user="bot-mode" uid="451693">
+  <nd ref="104627175"/>
+  <nd ref="104787707"/>
+  <nd ref="104660518"/>
+  <nd ref="104746536"/>
+  <nd ref="104787710"/>
+  <nd ref="104787712"/>
+  <nd ref="104725359"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Caroline Avenue"/>
+  <tag k="tiger:cfcc" v="A41"/>
+  <tag k="tiger:county" v="Morris, NJ"/>
+  <tag k="tiger:name_base" v="Caroline"/>
+  <tag k="tiger:name_type" v="Ave"/>
+  <tag k="tiger:reviewed" v="no"/>
+  <tag k="tiger:zip_left" v="07444"/>
+  <tag k="tiger:zip_right" v="07444"/>
+ </way>
+ <way id="11711518" visible="true" version="2" changeset="14386863" timestamp="2012-12-24T07:36:53Z" user="bot-mode" uid="451693">
+  <nd ref="104834553"/>
+  <nd ref="104834555"/>
+  <nd ref="104834557"/>
+  <nd ref="104834559"/>
+  <nd ref="104787710"/>
+  <nd ref="104834563"/>
+  <nd ref="104765585"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Lewis Street"/>
+  <tag k="tiger:cfcc" v="A41"/>
+  <tag k="tiger:county" v="Morris, NJ"/>
+  <tag k="tiger:name_base" v="Lewis"/>
+  <tag k="tiger:name_type" v="St"/>
+  <tag k="tiger:reviewed" v="no"/>
+ </way>
+</osm>

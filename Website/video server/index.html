@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Video Stream</title>
+</head>
+<body>
+    <h2>Video Stream from Server</h2>
+    <img id="video" width="640" height="480" style="border:1px solid black">
+
+    <script>
+        // Replace SERVER_IP with the actual server's IP (e.g. ws://192.168.1.100:8765)
+        const ws = new WebSocket("ws://SERVER_IP:8765");
+        const videoEl = document.getElementById("video");
+
+        ws.onopen = () => console.log("✅ Connected to server");
+        ws.onclose = () => console.log("❌ Disconnected");
+
+        ws.onmessage = (event) => {
+            // Received base64 JPEG -> show as image
+            videoEl.src = "data:image/jpeg;base64," + event.data;
+        };
+    </script>
+</body>
+</html>

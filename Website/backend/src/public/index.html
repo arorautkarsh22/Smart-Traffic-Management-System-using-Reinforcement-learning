@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebRTC Stream</title>
+</head>
+<body>
+  <h2>WebRTC Stream</h2>
+  <video id="video" autoplay playsinline></video>
+
+  <script>
+    const pc = new RTCPeerConnection();
+    const ws = new WebSocket("ws://localhost:3000");
+
+    pc.ontrack = (event) => {
+      document.getElementById("video").srcObject = event.streams[0];
+    };
+
+    ws.onmessage = async (event) => {
+      const message = JSON.parse(event.data);
+      if (message.sdp) {
+        await pc.setRemoteDescription(message);
+        if (message.type === "offer") {
+          const answer = await pc.createAnswer();
+          await pc.setLocalDescription(answer);
+          ws.send(JSON.stringify(pc.localDescription));
+        }
+      } else if (message.candidate) {
+        await pc.addIceCandidate(message.candidate);
+      }
+    };
+
+    pc.onicecandidate = ({ candidate }) => {
+      if (candidate) ws.send(JSON.stringify({ candidate }));
+    };
+  </script>
+</body>
+</html>

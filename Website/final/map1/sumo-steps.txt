@@ -1,0 +1,9 @@
+1. get map 
+2. get d:\apps\sumo\data\typemap\osmNetconvert.typ.xml
+3. netconvert --osm-files map.osm -o network.net.xml -t osmNetconvert.typ.xml --xml-validation never
+use this --- netconvert --osm-files map.osm -o network.net.xml -t osmNetconvert.typ.xml --xml-validation never --no-turnarounds
+4. get typemap.xml
+5. polyconvert --net-file network.net.xml --osm-files map.osm --type-file typemap.xml -o map.poly.xml --xml-validation never
+6. get randomTrips.py d:\apps\sumo\tools\randomTrips.py
+7. python randomTrips.py -n network.net.xml -r map.rou.xml -e 2000 -l
+8. get .sumocfg
