@@ -2,7 +2,7 @@
 
 ## ✨ Overview
 
-This project implements an **Adaptive Traffic Management System (ATMS)** utilizing **Reinforcement Learning (RL)**, specifically **Q-Learning** and **Deep Q-Learning (DQN)**, to dynamically optimize traffic signal timings in real-time. The system provides dynamic, adaptive control for urban congestion.
+This project implements an **Adaptive Traffic Management System (ATMS)** utilizing **Reinforcement Learning (RL)**, specifically **Q-Learning**, to dynamically optimize traffic signal timings in real-time. The system provides dynamic, adaptive control for urban congestion.
 
 The core objective is to minimize congestion, reduce vehicle waiting times, and enhance overall urban mobility efficiency compared to traditional fixed-time or loop-detector-based signal systems.
 
@@ -30,9 +30,8 @@ The system is designed to achieve significant performance improvements, includin
 | Category | Technology | Purpose |
 | :--- | :--- | :--- |
 | **Simulation** | **SUMO** (Simulation of Urban MObility) | Provides a realistic traffic environment for training and testing. |
-| **Reinforcement Learning** | **Deep Q-Learning (DQN)** | Algorithm used to train the agent to select optimal signal actions. |
+| **Reinforcement Learning** | **Q-Learning** | Algorithm used to train the agent to select optimal signal actions. |
 | **Core** | **Python 3.x** | Primary programming language for the RL logic and simulation integration (`traci`). |
-| **Libraries** | **TensorFlow/PyTorch, NumPy** | Used for neural network implementation and data handling. |
 | **Frontend/Hardware** | **React, Node.js, Raspberry Pi (RPi)** | Used for the web interface and hardware integration components of the system. |
 
 ***
@@ -59,13 +58,4 @@ You must have the following installed on your system:
     pip install -r requirements.txt
     ```
 
-***
 
-## 🚀 Usage and Simulation
-
-### Training the RL Agent
-
-To begin training the Deep Q-Learning model on your traffic scenario:
-
-```bash
-python train.py --episodes <NUMBER_OF_EPISODES>
